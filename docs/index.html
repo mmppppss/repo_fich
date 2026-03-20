@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepoFICH - Documentación</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="icon" href="/media/logo.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #1E3A8A;
+            --secondary-color: #DC2626;
+        }
+        .sidebar-nav > ul > li > a {
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+        .markdown-section code {
+            background-color: #f3f4f6;
+            border-radius: 4px;
+            padding: 2px 6px;
+        }
+        .cover {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 50%, #DC2626 100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">Cargando documentación...</div>
+    <script>
+        window.$docsify = {
+            name: 'RepoFICH',
+            repo: '',
+            loadSidebar: true,
+            subMaxLevel: 3,
+            logo: '/media/logo.png',
+            themeColor: '#1E3A8A',
+            auto2top: true,
+            search: {
+                maxAge: 86400000,
+                paths: 'auto',
+                placeholder: 'Buscar',
+                noData: '¡No encontrado!',
+                depth: 3
+            },
+            pagination: {
+                previousText: 'Anterior',
+                nextText: 'Siguiente',
+                crossChapter: true
+            }
+        }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
